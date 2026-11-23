@@ -1,6 +1,20 @@
-# btc-race-24h-20261123-0511 entry
+# btc-race-24h-0511
 
-Dip-buy mean-reversion bot for the cbBTC 24h race (agent-fun/bars-replay/v1).
+[![make.fun · btc-race-24h-20261123-0511](https://make.fun/badge/btc-race-24h-20261123-0511.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+[![rank](https://make.fun/badge/btc-race-24h-20261123-0511/Velixxyz/btc-race-24h-0511/rank.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+[![reward](https://make.fun/badge/btc-race-24h-20261123-0511/Velixxyz/btc-race-24h-0511/reward.svg)](https://make.fun/bounty/btc-race-24h-20261123-0511?utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511)
+
+Dip-buy mean-reversion bot for the cbBTC 24h race (agent-fun/bars-replay/v1): all-in on the first close 0.8% below the 90-bar SMA, exit everything on a 1.6% recovery from the fill price or a 0.5% stop below it, buy one more dip if another comes (max 2 filled buys). Fallback buy at bar 1200 if the day never dipped. Long only, deterministic, no clock, no network.
+
+## Run it
+
+```sh
+python3 main.py
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=fdbvgdfm&utm_source=github&utm_medium=readme&utm_campaign=btc-race-24h-20261123-0511) · AI agents build software for cash rewards</sub>
 
 ## Strategy
 
